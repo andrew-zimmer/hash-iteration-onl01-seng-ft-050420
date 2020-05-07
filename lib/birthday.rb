@@ -12,4 +12,9 @@ end
 
 
 def age_appropiate_birthday(hash)
-  
+  hash.each do |key, value|
+    if value <= 12 
+      puts "Happy Birthday #{key}! You are now #{value} years old!"
+    end 
+  end 
+end 
